@@ -38,6 +38,7 @@
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif; color: rgb(255, 0, 0);"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">MEDICAL TEAM TO REVIEW</u>:</strong></p>
+    <input type="text" name="Mt" placeholder="Enter text here" required>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif; color: rgb(255, 0, 0);"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
@@ -47,27 +48,72 @@
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Sources</u>:</strong></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
-    <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;">SCR / Patient / TTA / PODs / Carer / Nursing Home / GP / Community Pharmacy</p>
+    <input type="checkbox" id="SCR" name="SCR" value="SCR">
+    <label for="SCR">SCR</label><br>
+    <input type="checkbox" id="Patient" name="Patient" value="Patient">
+    <label for="Patient">Patient</label><br>
+    <input type="checkbox" id="TTA" name="TTA" value="TTA">
+    <label for="TTA">TTA</label><br>
+    <input type="checkbox" id="PODs" name="PODs" value="PODs">
+    <label for="PODs">PODs</label><br>
+    <input type="checkbox" id="Carer" name="Carer" value="Carer">
+    <label for="Carer">Carer</label><br>
+    <input type="checkbox" id="NursingHome" name="NursingHome" value="NursingHome">
+    <label for="NursingHome">Nursing Home</label><br>
+    <input type="checkbox" id="GP" name="GP" value="GP">
+    <label for="GP"> GP</label><br>
+    <input type="checkbox" id="CommunityPharmacy" name="CommunityPharmacy" value="CommunityPharmacy">
+    <label for="Community Pharmacy">Community Pharmacy</label><br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Patient drug allergies/sensitivities and reactions</u>:</strong></p>
+    <label class="btn btn-outline-danger">
+        <input type="radio" name="Allergies" id="Yes" value="Yes" onclick=""> Yes
+      </label>
+      <label class="btn btn-outline-primary">
+        <input type="radio" name="Allergies" id="No" value="No" onclick=""> NKDA
+    </label>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
 </div>
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Regular Medicines (Name/Strength/Form/Dose/PODs)</u>:</strong></p>
+    <label class="btn btn-outline-danger">
+        <input type="radio" name="RegularMedication" id="Yes" value="Yes" onclick=""> Yes
+      </label>
+      <label class="btn btn-outline-primary">
+        <input type="radio" name="RegularMedication" id="No" value="No" onclick=""> No
+    </label>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Acute Medications</u>:</strong></p>
+    <label class="btn btn-outline-danger">
+        <input type="radio" name="AcuteMedication" id="Yes" value="Yes" onclick=""> Yes
+      </label>
+      <label class="btn btn-outline-primary">
+        <input type="radio" name="AcuteMedication" id="No" value="No" onclick=""> No
+    </label>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">OTC/Herbal Preparations/Illicit Drugs/Other</u>:</strong></p>
+    <label class="btn btn-outline-danger">
+        <input type="radio" name="OTC" id="Yes" value="Yes" onclick=""> Yes
+      </label>
+      <label class="btn btn-outline-primary">
+        <input type="radio" name="OTC" id="No" value="No" onclick=""> No
+    </label>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
 </div>
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Smoking Status</u>:</strong></p>
+    <label class="btn btn-outline-danger">
+        <input type="radio" name="Smoking" id="Yes" value="Yes" onclick=""> Yes
+      </label>
+      <label class="btn btn-outline-primary">
+        <input type="radio" name="Smoking" id="No" value="No" onclick=""> No
+    </label>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;">Smoker: Yes/No</p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;">Number of cigarettes smoked per day:</p>
@@ -97,6 +143,7 @@
 </div>
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-size: 11pt; font-family: Arial, sans-serif; background: rgb(255, 255, 255);"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">NPSA Alert Adults at Risk of Adrenal Crisis - PHARMACIST TO COMPLETE</u></strong></p>
+    
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-size: 11pt; font-family: Arial, sans-serif; background: rgb(255, 255, 255);"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-size: 11pt; font-family: Arial, sans-serif; background: rgb(255, 255, 255);">If yes to any questions below, supply red steroid emergency card on discharge (<strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;">add red steroid card prompt on TTA</strong>).</p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-size: 11pt; font-family: Arial, sans-serif; background: rgb(255, 255, 255);">Refer to the bulletin and Adrenal Crisis Clinical Guideline for full criteria.</p>
