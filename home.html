@@ -38,7 +38,7 @@
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif; color: rgb(255, 0, 0);"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">MEDICAL TEAM TO REVIEW</u>:</strong></p>
-    <input type="text" name="Mt" placeholder="Enter text here" required>
+    <textarea type="text" name="Mt" placeholder="Enter text here" cols="50" rows="4"></textarea>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif; color: rgb(255, 0, 0);"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
@@ -73,6 +73,7 @@
         <input type="radio" name="Allergies" id="No" value="No" onclick=""> NKDA
     </label>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
+    <textarea type="text" name="AllergyBox" placeholder="Enter text here" cols="50" rows="4"></textarea>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
 </div>
@@ -85,6 +86,7 @@
         <input type="radio" name="RegularMedication" id="No" value="No" onclick=""> No
     </label>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
+    <textarea type="text" name="RegMed" placeholder="Drug name, strength, directions" cols="50" rows="4"></textarea>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Acute Medications</u>:</strong></p>
@@ -95,6 +97,7 @@
         <input type="radio" name="AcuteMedication" id="No" value="No" onclick=""> No
     </label>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
+    <textarea type="text" name="AcuteMed" placeholder="Enter text here" cols="50" rows="4"></textarea>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">OTC/Herbal Preparations/Illicit Drugs/Other</u>:</strong></p>
     <label class="btn btn-outline-danger">
@@ -104,6 +107,7 @@
         <input type="radio" name="OTC" id="No" value="No" onclick=""> No
     </label>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
+    <textarea type="text" name="OtcBox" placeholder="Name, strength, directions" cols="50" rows="4"></textarea>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
 </div>
 <div>
@@ -115,15 +119,15 @@
         <input type="radio" name="Smoking" id="No" value="No" onclick=""> No
     </label>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
-    <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;">Smoker: Yes/No</p>
-    <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;">Number of cigarettes smoked per day:</p>
-    <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;">Smoking cessation advice given: Yes/No</p>
-    <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;">Patient consents to nicotine replacement therapy (NRT) prescription: Yes/No</p>
-    <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;">Patient referred to smoking cessation service: Yes/No</p>
-    <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
-    <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;">To refer please copy the link below and paste in the URL bar:</p>
-    <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-size: 11pt; font-family: Arial, sans-serif; color: rgb(0, 0, 255);"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">&lt;https://my.northmid.nhs.uk/tackling-tobacco-dependency&gt;</u></p>
-    <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-size: 11pt; font-family: Arial, sans-serif;"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
+    <p>Smoker: Yes/No</p>
+    <p>Number of cigarettes smoked per day:</p>
+    <p>Smoking cessation advice given: Yes/No</p>
+    <p>Patient consents to nicotine replacement therapy (NRT) prescription: Yes/No</p>
+    <p>Patient referred to smoking cessation service: Yes/No</p>
+    <p><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
+    <p>To refer please copy the link below and paste in the URL bar:</p>
+    <p><u style="box-sizing: border-box; padding: 0px; margin: 0px;">&lt;https://my.northmid.nhs.uk/tackling-tobacco-dependency&gt;</u></p>
+    <p><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
 </div>
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">List of Discrepancies (with reasons) - PHARMACIST USE ONLY</u>:</strong></p>
