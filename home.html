@@ -40,10 +40,10 @@ margin-left: 5px;
 <div>
     <br></br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif; color: rgb(255, 0, 0);"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">MEDICAL TEAM TO REVIEW</u>:</strong></p>
+    <br></br>
     <textarea type="text" name="Mt" placeholder="Enter text here" cols="50" rows="4"></textarea>
     <br></br>
     <br></br>
-    <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif; color: rgb(255, 0, 0);"><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
 </div>
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">DRUG HISTORY</u></strong></p>
@@ -216,9 +216,12 @@ margin-left: 5px;
 </div>
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Pharmaceutical Needs Assessment</u>:</strong></p>
-    <br></br>
-    <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">Original boxes/Medication compliance aid (e.g. dosette box)</p>
-    <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">Medicines self-managed/Managed by relative/Managed by carer</p>
+    <label class="btn btn-outline-danger">
+      <input type="radio" name="ComplianceAid" id="Yes" value="Yes" onclick=""> Medication compliance aid (e.g. dosette box)
+    </label>
+    <label class="btn btn-outline-primary">
+      <input type="radio" name="NoComplianceAid" id="No" value="No" onclick=""> Original boxes
+    </label>
     <br></br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">Does this patient meet the&nbsp;<strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;">discharge medicines service (DMS)</strong>&nbsp;referral criteria?&nbsp;<strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;">Yes/No</strong></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">If yes, complete all community pharmacy details including ODS code (obtainable from SCR).</p>
