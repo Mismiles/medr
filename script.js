@@ -1,6 +1,9 @@
 //Show and hide medical team review box//
+const smoking= document.getElementById('smoking')
 
-function MtYes() {
+
+function MtYes(bool) {
+console.log (bool)
   var x = document.getElementById("Mt");
   if (x.style.display = "none") {
     x.style.display = "block";
