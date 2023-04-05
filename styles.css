@@ -2,6 +2,6 @@ textarea{
     display: none;
 }
 
-#smoking-box{
+#smoking-box, #steroid-hide, #dosette-hide, #anticoag-hide, #dms-hide{
     display: none;
 }

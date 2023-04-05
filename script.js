@@ -1,3 +1,24 @@
+//Show and hide medical team review box//
+
+function MtYes() {
+  var x = document.getElementById("Mt");
+  if (x.style.display = "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function MtNo() {
+  var x = document.getElementById("Mt");
+  if (x.style.display = "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
 //Show and hide allergybox//
 
 function show() {
@@ -94,9 +115,29 @@ function show4() {
     }
   }
 
-//Show and hide referral box//
+//Show and hide technician referral box//
 function show5() {
-    var x = document.getElementById("referral-box");
+  var x = document.getElementById("referral-box");
+  if (x.style.display = "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function hide5() {
+  var x = document.getElementById("referral-box");
+  if (x.style.display = "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+//Show and hide referral box//
+function show6() {
+    var x = document.getElementById("steroid-hide");
     if (x.style.display = "none") {
       x.style.display = "block";
     } else {
@@ -104,11 +145,68 @@ function show5() {
     }
   }
 
-  function hide5() {
-    var x = document.getElementById("referral-box");
+  function hide6() {
+    var x = document.getElementById("steroid-hide");
     if (x.style.display = "block") {
       x.style.display = "none";
     } else {
       x.style.display = "block";
     }
   }
+
+//Show and hide dosette box//
+function show7() {
+  var x = document.getElementById("dosette-hide");
+  if (x.style.display = "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function hide7() {
+  var x = document.getElementById("dosette-hide");
+  if (x.style.display = "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+//Show and hide anticoag//
+function show8() {
+  var x = document.getElementById("anticoag-hide");
+  if (x.style.display = "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function hide8() {
+  var x = document.getElementById("anticoag-hide");
+  if (x.style.display = "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+//Show and hide anticoag//
+function show9() {
+  var x = document.getElementById("dms-hide");
+  if (x.style.display = "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function hide9() {
+  var x = document.getElementById("dms-hide");
+  if (x.style.display = "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
