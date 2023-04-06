@@ -43,35 +43,29 @@ margin-left: 5px;
     <br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif; color: rgb(255, 0, 0);"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">MEDICAL TEAM TO REVIEW</u>:</strong></p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="RegularMedication"    onclick=toggle('Mt',true)> Yes
+      <input type="radio" name="MedicalTeam"    onclick=toggle('Mt',true)> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="RegularMedication"   onclick=toggle('Mt')> Nothing
+      <input type="radio" name="MedicalTeam"   onclick=toggle('Mt')> Nothing
   </label>
     <br>
     <textarea type="text" name="Mt" id="Mt" placeholder="Enter text here" cols="50" rows="4"></textarea>
-    <br></br>
+    <br>
 </div>
 <div id="labels">
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">DRUG HISTORY</u></strong></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Sources</u>:</strong></p>
-    <input type="checkbox" id="SCR" name="SCR" value="SCR">
-    <label for="SCR">SCR</label><br>
-    <input type="checkbox" id="Patient" name="Patient" value="Patient">
-    <label for="Patient">Patient</label><br>
-    <input type="checkbox" id="TTA" name="TTA" value="TTA">
-    <label for="TTA">TTA</label><br>
-    <input type="checkbox" id="PODs" name="PODs" value="PODs">
-    <label for="PODs">PODs</label><br>
-    <input type="checkbox" id="Carer" name="Carer" value="Carer">
-    <label for="Carer">Carer</label><br>
-    <input type="checkbox" id="nursing-home" name="nursing-home" value="NursingHome">
-    <label for="NursingHome">Nursing Home</label><br>
-    <input type="checkbox" id="GP" name="GP" value="GP">
-    <label for="GP"> GP</label><br>
-    <input type="checkbox" id="community-pharmacy" name="community-pharmacy" value="CommunityPharmacy">
-    <label for="Community Pharmacy">Community Pharmacy</label><br>
-    <br>
+    
+    <button type="button" class="btn btn-outline-primary" id="SCR" name="SCR">SCR</button>
+    <button type="button" class="btn btn-outline-secondary" id="Patient" name="Patient">Pateint</button>
+    <button type="button" class="btn btn-outline-success" id="tta" name="tta">TTA</button>
+    <button type="button" class="btn btn-outline-danger" id="pods" name="pods">PODS</button>
+    <button type="button" class="btn btn-outline-warning" id="carer" name="carer">Carer</button>
+    <button type="button" class="btn btn-outline-info" id="nursing-home" name="nursing-home">Nursing home</button>
+    <button type="button" class="btn btn-outline-light" id="gp" name="gp">GP</button>
+    <button type="button" class="btn btn-outline-dark" id="community-pharmacy" name="community-pharmacy">Community Pharmacy</button>
+    <br></br>
+
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Patient drug allergies/sensitivities and reactions</u>:</strong></p>
     <label class="btn btn-outline-danger">
         <input type="radio" name="Allergies"   onclick=toggle('AllergyBox',true)> Yes
@@ -79,7 +73,7 @@ margin-left: 5px;
       <label class="btn btn-outline-primary">
         <input type="radio" name="Allergies"   checked="checked" onclick=toggle('AllergyBox')> NKDA
     </label>
-    <br></br>
+    <br>
       <textarea type="text" name="AllergyBox" id="AllergyBox" placeholder="Enter allergies and reactions" cols="50" rows="4"></textarea>
   <br>
 </div>
@@ -122,7 +116,7 @@ margin-left: 5px;
     </label>
     <label class="btn btn-outline-primary">
       <input type="radio" name="Smoking"   checked="checked" onclick=toggle('smoking-box')> No
-  </label>
+    </label>
   <div id="smoking-box">
     <p>Number of cigarettes smoked per day:</p>
     <input type="number" id="cigarettes" name="cigarettes" min="1" max="60">
@@ -152,14 +146,11 @@ margin-left: 5px;
     <p><br style="box-sizing: border-box; padding: 0px; margin: 0px;"></p>
   </div>
 </div>
+<br>
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">List of Discrepancies (with reasons) - PHARMACIST USE ONLY</u>:</strong></p>
-    <br>
-    <input type="text" id="changes" name="changes" value="New:
-    Dose changes:
 
-    Withheld/Stopped:
-    " cols="50" rows="4"></input>
+    <textarea type="text" name="PharmacistReferral" id="" placeholder="New: Changes: Stopped:" cols="50" rows="4" style="display: block;"></textarea>
     <br></br>
 </div>
 <div>

@@ -5,3 +5,8 @@ textarea{
 #smoking-box, #steroid-hide, #dosette-hide, #anticoag-hide, #dms-hide{
     display: none;
 }
+
+#changes{
+    width:400px;
+    height: 400px;
+}
