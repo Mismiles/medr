@@ -2,6 +2,12 @@
 const toggle=(id,bool=false)=>document.getElementById(id).style.display= bool? 'block': 'none'
 
 //Highlight source button onclick     //
-function sources() {
-    var element = document.getElementsByClassName("btn btn-outline-secondary").toggleClass('MyClass');;
- }
+ function sources(e) {
+    const className = e.getAttribute("class");
+    if(className=="btn btn-outline-secondary") {
+      e.className = "btn btn-secondary";
+    }
+    else{
+      e.className = "btn btn-outline-secondary";
+    }
+  }
