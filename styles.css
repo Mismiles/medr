@@ -1,3 +1,5 @@
+/* Styling for hidden text boxes */
+
 textarea{
     display: none;
 }
@@ -6,11 +8,14 @@ textarea{
     display: none;
 }
 
+/* Changes box */
+
 #changes{
     width:400px;
     height: 400px;
 }
 
+/* Main two Divs */
 .row {
     display: flex;
     flex-direction: row;
@@ -24,3 +29,10 @@ textarea{
     flex-basis: 100%;
     flex: 1;
   }
+
+
+/* Results preview box */
+
+#output-preview {
+    background-color: darkslategray;
+}
