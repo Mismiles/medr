@@ -18,3 +18,13 @@ const toggle=(id,bool=false)=>document.getElementById(id).style.display= bool? '
     }
   }
 
+ //Show/hide date box    //
+ function SCRdate() {
+  let change = document.getElementById("SCR-box")
+  if(change.style.display=="block") {
+    change.style.display = "none";
+  }
+  else{
+    change.style.display = "block";
+  }
+}
