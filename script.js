@@ -8,23 +8,29 @@ document.getElementById('Rby').addEventListener("click", function() {
 const toggle=(id,bool=false)=>document.getElementById(id).style.display= bool? 'block': 'none'
 
 //Highlight source button onclick     //
- function sources(e) {
-    const className = e.getAttribute("class");
-    if(className=="btn btn-outline-secondary") {
-      e.className = "btn btn-secondary";
-    }
-    else{
-      e.className = "btn btn-outline-secondary";
-    }
-  }
+//  function sources(e) {
+//     const className = e.getAttribute("class");
+//     if(className=="btn btn-outline-secondary") {
+//       e.className = "btn btn-secondary";
+//     }
+//     else{
+//       e.className = "btn btn-outline-secondary";
+//     }
+//   }
 
+const sources = (e) => (e.getAttribute("class") == "btn btn-outline-secondary") ? e.className = "btn btn-secondary" : e.className = "btn btn-outline-secondary";
+
+
+  
  //Show/hide date box    //
- function SCRdate() {
-  let change = document.getElementById("SCR-box")
-  if(change.style.display=="block") {
-    change.style.display = "none";
-  }
-  else{
-    change.style.display = "block";
-  }
-}
+//  function SCRdate() {
+//   let change = document.getElementById("SCR-box")
+//   if(change.style.display=="block") {
+//     change.style.display = "none";
+//   }
+//   else{
+//     change.style.display = "block";
+//   }
+// }
+
+const SCRdate = () => { let change = document.getElementById("SCR-box"); change.style.display == "block" ? change.style.display = "none" : change.style.display = "block"; }
