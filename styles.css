@@ -42,5 +42,12 @@ textarea{
 /* Results preview box */
 
 #output-preview {
+    
+}
+
+#output{
+    width: 100%;
+    height: 100%;
+    display: block;
     background-color: darkslategray;
 }
