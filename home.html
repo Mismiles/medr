@@ -63,15 +63,15 @@ margin-left: 5px;
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">DRUG HISTORY</u></strong></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Sources</u>:</strong></p>
     
-    <button type="button" class="btn btn-outline-secondary" id="SCR" name="SCR" onclick="SCRdate(), sources(this)">SCR</button>
+    <button type="button" class="btn btn-outline-dark" id="SCR" name="SCR" onclick="SCRdate(), sources(this)">SCR</button>
     <div id="SCR-box">SCR Last updated <input type="date" name="SCR-box"></input></div>
-    <button type="button" class="btn btn-outline-secondary" id="Patient" name="Patient" onclick="sources(this)">Patient</button>
-    <button type="button" class="btn btn-outline-secondary"  id="tta" name="tta" onclick="sources(this)">TTA</button>
-    <button type="button" class="btn btn-outline-secondary"  id="pods" name="pods" onclick="sources(this)">PODS</button>
-    <button type="button" class="btn btn-outline-secondary" id="carer" name="carer" onclick="sources(this)">Carer</button>
-    <button type="button" class="btn btn-outline-secondary" id="nursing-home" name="nursing-home" onclick="sources(this)">Nursing home</button>
-    <button type="button" class="btn btn-outline-secondary" id="gp" name="gp"onclick="sources(this)">GP</button>
-    <button type="button" class="btn btn-outline-secondary" id="community-pharmacy" name="community-pharmacy" onclick="sources(this)">Community Pharmacy</button>
+    <button type="button" class="btn btn-outline-dark" id="Patient" name="Patient" onclick="sources(this)">Patient</button>
+    <button type="button" class="btn btn-outline-dark"  id="tta" name="tta" onclick="sources(this)">TTA</button>
+    <button type="button" class="btn btn-outline-dark"  id="pods" name="pods" onclick="sources(this)">PODS</button>
+    <button type="button" class="btn btn-outline-dark" id="carer" name="carer" onclick="sources(this)">Carer</button>
+    <button type="button" class="btn btn-outline-dark" id="nursing-home" name="nursing-home" onclick="sources(this)">Nursing home</button>
+    <button type="button" class="btn btn-outline-dark" id="gp" name="gp"onclick="sources(this)">GP</button>
+    <button type="button" class="btn btn-outline-dark" id="community-pharmacy" name="community-pharmacy" onclick="sources(this)">Community Pharmacy</button>
     <br></br>
 
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Patient drug allergies/sensitivities and reactions</u>:</strong></p>
@@ -130,18 +130,21 @@ margin-left: 5px;
     <input type="number" id="cigarettes" name="cigarettes" min="1" max="60">
     <p>Smoking cessation advice given:</p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="smoking-advice"   onclick=""> Yes
+      <input type="radio" name="smoking-advice"   onclick=toggle('smk-advice',true)> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="smoking-advice"   onclick=""> No
+      <input type="radio" name="smoking-advice"   onclick=toggle('smk-advice')> No
   </label>
+  <br>
+  <textarea type="text" name="smk-advice" id="smk-advice" placeholder="Specify" cols="20" rows="1"></textarea>
     <p>Patient consents to nicotine replacement therapy (NRT) prescription:</p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="nicotine"   onclick=""> Yes
+      <input type="radio" name="nicotine"   onclick=toggle('nico-advice',true)> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="nicotine"   onclick=""> No
+      <input type="radio" name="nicotine"   onclick=toggle('nico-advice',)> No
   </label>
+  <textarea type="text" name="nico-advice" id="nico-advice" placeholder="Specify preference" cols="20" rows="1"></textarea>
     <p>Patient referred to smoking cessation service:</p>
     <label class="btn btn-outline-danger">
       <input type="radio" name="cessation"   onclick=""> Yes
@@ -187,15 +190,17 @@ margin-left: 5px;
     <br></br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">Was the patient prescribed long term or high dose&nbsp;<u style="box-sizing: border-box; padding: 0px; margin: 0px;">oral</u>&nbsp;steroids before admission?</p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="long-steroid"   onclick=""> Yes
+      <input type="radio" name="long-steroid"   onclick=toggle('s-indication',true)> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="long-steroid"   onclick=""> No
+      <input type="radio" name="long-steroid"   onclick=toggle('s-inidcation')> No
     </label>
-    <br></br>
-    <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">State indication:</p>
-    <input type="text" id="indication" name="indication" value="" cols="50" rows="4"></input>
-    <br></br>
+    <br>
+    <div id="s-indication" name="s-indication">
+      <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">State indication:</p>
+      <input type="text" id="indication" name="indication" value="" cols="50" rows="4"></input>
+    </div>
+    <br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">Was the patient prescribed high dose&nbsp;<u style="box-sizing: border-box; padding: 0px; margin: 0px;">inhaled</u>&nbsp;steroids before admission?</p>
     <label class="btn btn-outline-danger">
       <input type="radio" name="inhaled-steroids"   onclick=""> Yes

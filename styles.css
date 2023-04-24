@@ -12,7 +12,7 @@ textarea{
     display: none;
 }
 
-#smoking-box, #steroid-hide, #dosette-hide, #anticoag-hide, #dms-hide, #SCR-box{
+#smoking-box, #steroid-hide, #dosette-hide, #anticoag-hide, #dms-hide, #SCR-box, #s-indication{
     display: none;
 }
 
