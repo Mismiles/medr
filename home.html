@@ -88,13 +88,14 @@ margin-left: 5px;
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Regular Medicines (Name/Strength/Form/Dose/PODs)</u>:</strong></p>
     <label class="btn btn-outline-danger">
-        <input type="radio" name="RegularMedication"   onclick=toggle('reg-meds',true)> Yes
+        <input type="radio" name="RegularMedication"   onclick=toggle('reg-meds',true); generate()> Yes
       </label>
       <label class="btn btn-outline-primary">
         <input type="radio" name="RegularMedication"   checked="checked" onclick=toggle('reg-meds')> No
     </label>
     <br>
     <textarea type="text" name="reg-meds" id="reg-meds" placeholder="Drug name, strength, directions" cols="50" rows="4"></textarea>
+    <button type="button" class="btn btn-outline-dark" id="generate" name="generate" onclick="">Generate</button>
     <br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Acute Medications</u>:</strong></p>
     <label class="btn btn-outline-danger">

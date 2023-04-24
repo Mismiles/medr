@@ -28,3 +28,15 @@ const sources = (e) => (e.getAttribute("class") == "btn btn-outline-dark") ? e.c
 // }
 
 const SCRdate = () => { let change = document.getElementById("SCR-box"); change.style.display == "block" ? change.style.display = "none" : change.style.display = "block"; }
+
+// Show and hide gerate button
+
+var hidden = false;
+function generate() {
+hidden = !hidden;
+if(hidden) {
+document.getElementById('generate').style.display = 'none';
+} else {
+document.getElementById('generate').style.display = 'block';
+}
+}
