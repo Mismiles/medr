@@ -50,10 +50,10 @@ margin-left: 5px;
     <br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif; color: rgb(255, 0, 0);"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">MEDICAL TEAM TO REVIEW</u>:</strong></p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="MedicalTeam"    onclick=toggle('Mt',true)> Yes
+      <input type="radio" name="MedicalTeam"    onclick="toggle('Mt',true)"> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="MedicalTeam"   onclick=toggle('Mt')> Nothing
+      <input type="radio" name="MedicalTeam"   onclick="toggle('Mt')"> Nothing
   </label>
     <br>
     <textarea type="text" name="Mt" id="Mt" placeholder="Enter text here" cols="50" rows="4"></textarea>
@@ -76,10 +76,10 @@ margin-left: 5px;
 
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Patient drug allergies/sensitivities and reactions</u>:</strong></p>
     <label class="btn btn-outline-danger">
-        <input type="radio" name="Allergies"   onclick=toggle('AllergyBox',true)> Yes
+        <input type="radio" name="Allergies"   onclick="toggle('AllergyBox',true)"> Yes
       </label>
       <label class="btn btn-outline-primary">
-        <input type="radio" name="Allergies"   checked="checked" onclick=toggle('AllergyBox')> NKDA
+        <input type="radio" name="Allergies"   checked="checked" onclick="toggle('AllergyBox')"> NKDA
     </label>
     <br>
       <textarea type="text" name="AllergyBox" id="AllergyBox" placeholder="Enter allergies and reactions" cols="50" rows="4"></textarea>
@@ -88,10 +88,10 @@ margin-left: 5px;
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Regular Medicines (Name/Strength/Form/Dose/PODs)</u>:</strong></p>
     <label class="btn btn-outline-danger">
-        <input type="radio" name="RegularMedication"   onclick=toggle('reg-meds',true); generate()> Yes
+        <input type="radio" name="RegularMedication"   onclick="toggle('reg-meds',true)"> Yes
       </label>
       <label class="btn btn-outline-primary">
-        <input type="radio" name="RegularMedication"   checked="checked" onclick=toggle('reg-meds')> No
+        <input type="radio" name="RegularMedication"   checked="checked" onclick="toggle('reg-meds')"> No
     </label>
     <br>
     <textarea type="text" name="reg-meds" id="reg-meds" placeholder="Drug name, strength, directions" cols="50" rows="4"></textarea>
@@ -99,20 +99,20 @@ margin-left: 5px;
     <br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Acute Medications</u>:</strong></p>
     <label class="btn btn-outline-danger">
-        <input type="radio" name="AcuteMedication"   onclick=toggle('acute-meds',true)> Yes
+        <input type="radio" name="AcuteMedication"   onclick="toggle('acute-meds',true)"> Yes
       </label>
       <label class="btn btn-outline-primary">
-        <input type="radio" name="AcuteMedication"   checked="checked" onclick=toggle('acute-meds')> No
+        <input type="radio" name="AcuteMedication"   checked="checked" onclick="toggle('acute-meds')"> No
     </label>
     <br>
     <textarea type="text" name="acute-meds" id="acute-meds" placeholder="Ensure dates and durations are present" cols="50" rows="4"></textarea>
     <br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">OTC/Herbal Preparations/Illicit Drugs/Other</u>:</strong></p>
     <label class="btn btn-outline-danger">
-        <input type="radio" name="OTC"   onclick=toggle('otc-box',true)> Yes
+        <input type="radio" name="OTC"   onclick="toggle('otc-box',true)"> Yes
       </label>
       <label class="btn btn-outline-primary">
-        <input type="radio" name="OTC"   checked="checked" onclick=toggle('otc-box')> No
+        <input type="radio" name="OTC"   checked="checked" onclick="toggle('otc-box')"> No
     </label>
     <br>
     <textarea type="text" name="OtcBox" id="otc-box" placeholder="Name, strength, directions" cols="50" rows="4"></textarea>
@@ -121,29 +121,29 @@ margin-left: 5px;
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(255, 255, 255); font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Smoking Status</u>:</strong></p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="Smoking"   onclick=toggle('smoking-box',true)> Yes
+      <input type="radio" name="Smoking"   onclick="toggle('smoking-box',true)"> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="Smoking"   checked="checked" onclick=toggle('smoking-box')> No
+      <input type="radio" name="Smoking"   checked="checked" onclick="toggle('smoking-box')"> No
     </label>
   <div id="smoking-box">
     <p>Number of cigarettes smoked per day:</p>
     <input type="number" id="cigarettes" name="cigarettes" min="1" max="60">
     <p>Smoking cessation advice given:</p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="smoking-advice"   onclick=toggle('smk-advice',true)> Yes
+      <input type="radio" name="smoking-advice"   onclick="toggle('smk-advice',true)"> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="smoking-advice"   onclick=toggle('smk-advice')> No
+      <input type="radio" name="smoking-advice"   onclick="toggle('smk-advice')"> No
   </label>
   <br>
   <textarea type="text" name="smk-advice" id="smk-advice" placeholder="Specify" cols="20" rows="1"></textarea>
     <p>Patient consents to nicotine replacement therapy (NRT) prescription:</p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="nicotine"   onclick=toggle('nico-advice',true)> Yes
+      <input type="radio" name="nicotine"   onclick="toggle('nico-advice',true)"> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="nicotine"   onclick=toggle('nico-advice',)> No
+      <input type="radio" name="nicotine"   onclick="toggle('nico-advice',)"> No
   </label>
   <textarea type="text" name="nico-advice" id="nico-advice" placeholder="Specify preference" cols="20" rows="1"></textarea>
     <p>Patient referred to smoking cessation service:</p>
@@ -162,16 +162,16 @@ margin-left: 5px;
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-size: 11pt; font-family: Arial, sans-serif;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">List of Discrepancies (with reasons) - PHARMACIST USE ONLY</u>:</strong></p>
 
-    <textarea type="text" name="PharmacistReferral" id="" placeholder="New: Changes: Stopped:" cols="50" rows="4" style="display: block;"></textarea>
+    <textarea type="text" name="PharmacistReferral" id="PharmacistReferral" placeholder="New: Changes: Stopped:" cols="50" rows="4" style="display: block;"></textarea>
     <br></br>
 </div>
 <div>
   <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-size: 11pt; font-family: Arial, sans-serif; background: rgb(255, 255, 255);"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">REFERRAL TO PHARMACIST / PHARMACY TECHNICIAN</u></strong></p>
   <label class="btn btn-outline-danger">
-    <input type="radio" name="counselling"   onclick=toggle('referral-box',true)> Yes
+    <input type="radio" name="counselling"   onclick="toggle('referral-box',true)"> Yes
   </label>
   <label class="btn btn-outline-primary">
-    <input type="radio" name="counselling"   checked="checked" onclick=toggle('referral-box')> N/A
+    <input type="radio" name="counselling"   checked="checked" onclick="toggle('referral-box')"> N/A
   </label>
   <br></br>
   <textarea type="text" name="PharmacistReferral" id="referral-box" placeholder="Enter details" cols="50" rows="4"></textarea>
@@ -179,10 +179,10 @@ margin-left: 5px;
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-size: 11pt; font-family: Arial, sans-serif; background: rgb(255, 255, 255);"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">NPSA Alert Adults at Risk of Adrenal Crisis - PHARMACIST TO COMPLETE</u></strong></p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="Steroids" id="YesSteroids"  onclick=toggle('steroid-hide',true)> History of steroid therapy
+      <input type="radio" name="Steroids" id="YesSteroids"  onclick="toggle('steroid-hide',true)"> History of steroid therapy
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="Steroids" id="NoSteroids"  checked="checked" onclick=toggle('steroid-hide')> No Steroid therapy
+      <input type="radio" name="Steroids" id="NoSteroids"  checked="checked" onclick="toggle('steroid-hide')"> No Steroid therapy
     </label>
   <div id="steroid-hide">
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-size: 11pt; font-family: Arial, sans-serif; background: rgb(255, 255, 255);">If yes to any questions below, supply red steroid emergency card on discharge (<strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;">add red steroid card prompt on TTA</strong>).</p>
@@ -191,32 +191,31 @@ margin-left: 5px;
     <br></br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">Was the patient prescribed long term or high dose&nbsp;<u style="box-sizing: border-box; padding: 0px; margin: 0px;">oral</u>&nbsp;steroids before admission?</p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="long-steroid"   onclick=toggle('s-indication',true)> Yes
+      <input type="radio" name="long-steroid"   onclick="toggle('s-indication',true)"> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="long-steroid"   onclick=toggle('s-inidcation')> No
+      <input type="radio" name="long-steroid"   onclick="toggle('s-indication')"> No
     </label>
     <br>
-    <div id="s-indication" name="s-indication">
-      <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">State indication:</p>
-      <input type="text" id="indication" name="indication" value="" cols="50" rows="4"></input>
-    </div>
+      <input type="text" id="s-indication" name="s-indication" placeholder="State indication"></input>
     <br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">Was the patient prescribed high dose&nbsp;<u style="box-sizing: border-box; padding: 0px; margin: 0px;">inhaled</u>&nbsp;steroids before admission?</p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="inhaled-steroids"   onclick=""> Yes
+      <input type="radio" name="inhaled-steroids"   onclick="toggle('inhaled-s',true)"> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="inhaled-steroids"   onclick=""> No
+      <input type="radio" name="inhaled-steroids"   onclick="toggle('inhaled-s')"> No
     </label>
-    <br></br>
+    <input type="text" name="inhaled-s" id="inhaled-s" placeholder="Specify"></input>
+    <br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">Was the patient prescribed&nbsp;<u style="box-sizing: border-box; padding: 0px; margin: 0px;">emergency hydrocortisone injection</u>&nbsp;before admission?</p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="emergency-steroids"   onclick=""> Yes
+      <input type="radio" name="emergency-steroids"   onclick="toggle('e-steroids',true)"> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="emergency-steroids"   onclick=""> No
+      <input type="radio" name="emergency-steroids"   onclick="toggle('e-steroids')"> No
     </label>
+    <input type="text" name="e-steroids" id="e-steroids" placeholder="Specify"></input>
   </div>
 </div>
 <br>
@@ -247,10 +246,10 @@ margin-left: 5px;
     <br></br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">Dosette box patient:&nbsp;<strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"></strong></p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="dosette"   onclick=toggle('dosette-hide',true)> Yes
+      <input type="radio" name="dosette"   onclick="toggle('dosette-hide',true)"> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="dosette"   checked="checked" onclick=toggle('dosette-hide')> No
+      <input type="radio" name="dosette"   checked="checked" onclick="toggle('dosette-hide')"> No
     </label>
   <div id="dosette-hide">
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">Community Pharmacy name:</p>
@@ -267,25 +266,28 @@ margin-left: 5px;
 </div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">Communication concerns (e.g. visual/hearing/language):&nbsp;<strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"></strong></p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="communication"   onclick=""> Yes
+      <input type="radio" name="communication"   onclick="toggle('c-concerns',true)"> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="communication"   onclick=""> No
+      <input type="radio" name="communication"   onclick="toggle('c-concerns')"> No
     </label>
+    <input type="text" name="c-concerns" id="c-concerns" placeholder="Specify"></input>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">Counselling required:&nbsp;<strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"></strong></p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="counselling"   onclick=""> Yes
+      <input type="radio" name="counselling"   onclick="toggle('c-required',true)"> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="counselling"   onclick=""> No
+      <input type="radio" name="counselling"   onclick="toggle('c-required')"> No
     </label>
+    <input type="text" name="c-required" id="c-required" placeholder="Specify"></input>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">Compliance issues:&nbsp;<strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"></strong></p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="compliance"   onclick=""> Yes
+      <input type="radio" name="compliance"   onclick="toggle('c-issues',true)"> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="compliance"   onclick=""> No
+      <input type="radio" name="compliance"   onclick="toggle('c-issues')"> No
     </label>
+    <input type="text" name="c-issues" id="c-issues" placeholder="Specify"></input>
     <br></br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">Any patients with a language barrier please use 'The Big Word' translation service.</p>
     <a href="https://my.northmid.nhs.uk/the-big-word---translation-service" target="_blank">Big Word Translation Service Link</a>
@@ -295,10 +297,10 @@ margin-left: 5px;
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Anticoagulation</u>:</strong></p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="anticoag"   onclick=toggle('anticoag-hide',true)> Yes
+      <input type="radio" name="anticoag"   onclick="toggle('anticoag-hide',true)"> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="anticoag"   checked="checked" onclick=toggle('anticoag-hide')> No
+      <input type="radio" name="anticoag"   checked="checked" onclick="toggle('anticoag-hide')"> No
     </label>
   <div id="anticoag-hide">
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">If normally on warfarin, please complete the following details:</p>
@@ -326,10 +328,10 @@ margin-left: 5px;
 <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Methadone/Buprenorphine</u>:&nbsp;</strong></p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="subtance-misuse"   onclick=toggle('dms-hide',true)> Yes
+      <input type="radio" name="subtance-misuse"   onclick="toggle('dms-hide',true)"> Yes
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="subtance-misuse"   checked="checked" onclick=toggle('dms-hide')> No
+      <input type="radio" name="subtance-misuse"   checked="checked" onclick="toggle('dms-hide')"> No
     </label>
   <div id="dms-hide">
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">If normally on methadone/buprenorphine please provide the following details:</p>
@@ -359,29 +361,32 @@ margin-left: 5px;
  <div>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt; background: rgb(255, 255, 255);"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Medicines for Discharge</u>:</strong></p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="supply" id="HasSupply"  onclick=""> Has own supply at home, supply new and changed medicines only
+      <input type="radio" name="supply" id="HasSupply"  onclick="toggle('s-meds')"> Has own supply at home, supply new and changed medicines only
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="supply" id="NeedsSome"  onclick=""> Has own supply at home but needs the following medicines only (please list)
+      <input type="radio" name="supply" id="NeedsSome"  onclick="toggle('s-meds', true)"> Has own supply at home but needs the following medicines only (please list)
     </label>
-    <label class="btn btn-outline-primary">
-      <input type="radio" name="supply" id="Supply"  onclick=""> Supply all medicines
+    <input type="text" name="s-meds" id="s-meds" placeholder="Specify"></input>
+    <br>
+    <label class="btn btn-outline-success">
+      <input type="radio" name="supply" id="Supply"  onclick="toggle('s-meds')"> Supply all medicines
     </label>
     <br></br>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;"><strong style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial;"><u style="box-sizing: border-box; padding: 0px; margin: 0px;">Discharge plan</u>:</strong></p>
     <p style="box-sizing: border-box; padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size: 11pt;">Expected to be discharged to:</p>
     <label class="btn btn-outline-danger">
-      <input type="radio" name="discharge-plan" id="OwnHome"  onclick=""> Own home
+      <input type="radio" name="discharge-plan" id="OwnHome"  onclick="toggle('other')"> Own home
     </label>
     <label class="btn btn-outline-primary">
-      <input type="radio" name="discharge-plan" id="NeedsSome"  onclick=""> Nursing Home
+      <input type="radio" name="discharge-plan" id="NeedsSome"  onclick="toggle('other')"> Nursing Home
     </label>
-    <label class="btn btn-outline-primary">
-      <input type="radio" name="discharge-plan" id="Supply"  onclick=""> Not known on admission
+    <label class="btn btn-outline-success">
+      <input type="radio" name="discharge-plan" id="Supply" onclick="toggle('other')"> Not known on admission
     </label>
-    <label class="btn btn-outline-primary">
-      <input type="radio" name="discharge-plan" id="Supply"  onclick=""> Other (please specify)
+    <label class="btn btn-outline-warning">
+      <input type="radio" name="discharge-plan" id="Supply"  onclick="toggle('other', true)"> Other (please specify)
     </label>
+    <input type="text" name="other" id="other" placeholder="Specify"></input>
     <br></br>
 </div>
 <input type="submit" value="Submit">
